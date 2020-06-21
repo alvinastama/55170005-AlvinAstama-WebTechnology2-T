@@ -1,0 +1,28 @@
+<ActionBar [title]="'Details of Catarcter Id '+ name"></ActionBar>
+<ScrollView orientation="vertical">
+    <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto, auto" columns="*,*" *ngIf="character">
+        <Image [src]="character[0].img" row="0" col="0"></Image>
+        <GridLayout rows="auto, auto, auto, auto, auto, auto" columns="*, *" row="1" col="0" colSpan="2" backgroundColor="blue">
+            <Label class="font-weight-bold" text="Character Name" row="2" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].name" row="2" col="1" colSpan="2"></Label>
+            <Label class="font-weight-bold" text="Birthday" row="3" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].birthday" row="3" col="1" colSpan="2"></Label>
+            <Label class="font-weight-bold" text="Occupations" row="4" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].occupation" row="4" col="1" colSpan="2" textWrap="true"></Label>
+            <Label class="font-weight-bold" text="Status" row="5" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].status" row="5" col="1" colSpan="2"></Label>
+        </GridLayout>
+        <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto, auto, auto,auto" columns="*,*" row="6" col="0" colSpan="2" backgroundColor="blue">
+            <Label class="font-weight-bold" text="Seasons" row="6" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].appearance" row="6" col="1" colSpan="2"></Label>
+            <Label class="font-weight-bold" text="Nickname" row="7" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].nickname" row="7" col="1" colSpan="2"></Label>
+            <Label class="font-weight-bold" text="Actor / Actress" row="8" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].portrayed" row="8" col="1" colSpan="2"></Label>
+            <Label class="font-weight-bold" text="Category" row="9" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].category" row="9" col="1" colSpan="2"></Label>
+            <Label class="font-weight-bold" text="Category" row="9" col="0" colSpan="2"></Label>
+            <Label [text]="character[0].category" row="9" col="1" colSpan="2" textWrap="true"></Label>
+        </GridLayout>
+    </GridLayout>
+</ScrollView>

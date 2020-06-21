@@ -1,0 +1,13 @@
+<ActionBar title="Breaking Bad Characters"></ActionBar>
+<GridLayout>
+    <ListView [items]="characters">
+        <ng-template let-item="item">
+            <StackLayout>
+                <Label 
+                    [nsRouterLink]="['/characters', item.char_id]" 
+                    [text]="item.name">
+                </Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>
